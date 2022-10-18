@@ -15,10 +15,17 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
   /////////////////////////// WRITE YOUR CODE HERE /////////////////////////
+///info prompt
+var userNeedlangth = window.prompt("How long is needed password?");
+
+
+
+///info for producing
 var lettersLower = "abcdefghijklmnopqrstuvwxyz".split;
 var lettersUper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split;
 var numbersLine = "0123456789".split;
 var specialCharacter = "`~!@#$%^&()*-_=+".split;
+
 
 
 
