@@ -22,18 +22,17 @@ if ( userNeed => 8){
 }else( userNeed <= 100 ){
 
   
-}
+};
 
 
 
 ///info for producing
-var lettersLower = "abcdefghijklmnopqrstuvwxyz".split;
-var lettersUper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split;
-var numbersLine = "0123456789".split;
-var specialCharacter = "`~!@#$%^&()*-_=+".split;
-
-var passwordElements = numbersLine.concat(specialCharacter, lettersLower, lettersUper);
-console.log(passwordElements);
+var passwordElements = {
+  lettersLower: "abcdefghijklmnopqrstuvwxyz".split,
+lettersUper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split,
+numbersLine: "0123456789".split,
+specialCharacter: "`~!@#$%^&()*-_=+".split,
+}
 
 var index = Math.floor(Math.random() * options.length);
 var passwordGen = passwordElements[index]
