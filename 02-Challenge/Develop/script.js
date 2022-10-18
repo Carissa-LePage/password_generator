@@ -29,9 +29,8 @@ if (!userNeedup){
  skip;
 }else{
   userNeedup === passwordElements.uper
-}
+};
 var userNeednumber = window.confirm("Are numbers needed?");
-if 
 
 var userNeedspecial = window.confirm("Are special characters needed?");
 
