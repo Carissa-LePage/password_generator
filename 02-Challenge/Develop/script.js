@@ -16,7 +16,11 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
   /////////////////////////// WRITE YOUR CODE HERE /////////////////////////
 ///info prompt
-var userNeedlangth = window.prompt("How long is needed password?");
+var userNeed = window.prompt("How long is needed password?");
+if (userNeed){
+//min-8 max-100//
+
+}
 
 
 
@@ -26,10 +30,12 @@ var lettersUper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split;
 var numbersLine = "0123456789".split;
 var specialCharacter = "`~!@#$%^&()*-_=+".split;
 
+var passwordElements = numbersLine.concat(specialCharacter, lettersLower, lettersUper);
+console.log(passwordElements);
+
+var index = Math.floor(Math.random() * options.length);
+var passwordGen = passwordElements[index]
 
 
 
-
-
-
-}
+};
