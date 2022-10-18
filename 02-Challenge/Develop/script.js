@@ -22,12 +22,19 @@ var passwordElements = {
   number: "0123456789".split,
   special: "`~!@#$%^&()*-_=+".split,
   };
-console.log(passwordElements)
 
 ///info prompt
-var userNeedup = window.prompt("Are uppercase letters needed? Type Yes or No.");
-var userNeednumber = window.prompt("Are numbers needed? Tyes Yes or No");
-var userNeedspecial = window.prompt("Are special characters needed? Tyes Yes or No");
+var userNeedup = window.confirm("Are uppercase letters needed?");
+if (!userNeedup){
+ skip;
+}else{
+  userNeedup === passwordElements.uper
+}
+var userNeednumber = window.confirm("Are numbers needed?");
+if 
+
+var userNeedspecial = window.confirm("Are special characters needed?");
+
 var userNeed = window.prompt("How long is needed password? Type number.");
 
 
