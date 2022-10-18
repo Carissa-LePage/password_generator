@@ -16,10 +16,12 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
   /////////////////////////// WRITE YOUR CODE HERE /////////////////////////
 ///info prompt
+var userNeed = window.prompt("")
 var userNeed = window.prompt("How long is needed password?");
+
 if ( userNeed => 8){
 
-}else( userNeed <= 100 ){
+}else( userNeed <= 128 ){
 
   
 };
@@ -28,14 +30,13 @@ if ( userNeed => 8){
 
 ///info for producing
 var passwordElements = {
-  lettersLower: "abcdefghijklmnopqrstuvwxyz".split,
-lettersUper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split,
-numbersLine: "0123456789".split,
-specialCharacter: "`~!@#$%^&()*-_=+".split,
+lower: "abcdefghijklmnopqrstuvwxyz".split,
+uper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split,
+number: "0123456789".split,
+special: "`~!@#$%^&()*-_=+".split,
 }
-
-var index = Math.floor(Math.random() * options.length);
-var passwordGen = passwordElements[index]
+//to produce password
+var index = [Math.floor(Math.random() * options.length)];
 
 
 
