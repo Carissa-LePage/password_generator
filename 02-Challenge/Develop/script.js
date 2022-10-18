@@ -17,9 +17,11 @@ function generatePassword() {
   /////////////////////////// WRITE YOUR CODE HERE /////////////////////////
 ///info prompt
 var userNeed = window.prompt("How long is needed password?");
-if (userNeed){
-//min-8 max-100//
+if ( userNeed => 8){
 
+}else( userNeed <= 100 ){
+
+  
 }
 
 
