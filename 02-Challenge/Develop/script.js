@@ -15,28 +15,28 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
   /////////////////////////// WRITE YOUR CODE HERE /////////////////////////
-///info prompt
-var userNeed = window.prompt("")
-var userNeed = window.prompt("How long is needed password?");
-
-if ( userNeed => 8){
-
-}else( userNeed <= 128 ){
-
-  
-};
-
-
-
-///info for producing
+  ///info for producing
 var passwordElements = {
-lower: "abcdefghijklmnopqrstuvwxyz".split,
-uper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split,
-number: "0123456789".split,
-special: "`~!@#$%^&()*-_=+".split,
-}
+  lower: "abcdefghijklmnopqrstuvwxyz".split,
+  uper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split,
+  number: "0123456789".split,
+  special: "`~!@#$%^&()*-_=+".split,
+  };
+console.log(passwordElements)
+
+///info prompt
+var userNeedup = window.prompt("Are uppercase letters needed? Type Yes or No.");
+var userNeednumber = window.prompt("Are numbers needed? Tyes Yes or No");
+var userNeedspecial = window.prompt("Are special characters needed? Tyes Yes or No");
+var userNeed = window.prompt("How long is needed password? Type number.");
+
+
+
+
+
 //to produce password
 var index = [Math.floor(Math.random() * options.length)];
+document.generatePassword = passwordElements[index];
 
 
 
