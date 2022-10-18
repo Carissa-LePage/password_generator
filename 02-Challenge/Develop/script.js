@@ -25,14 +25,20 @@ var passwordElements = {
 
 ///info prompt
 var userNeedup = window.confirm("Are uppercase letters needed?");
-if (!userNeedup){
- skip;
-}else{
-  userNeedup === passwordElements.uper
+if (userNeedup){
+  //logic here
+  console.log("Upper cass letters were chosen")
 };
 var userNeednumber = window.confirm("Are numbers needed?");
-
+if (userNeednumber){
+  //logic here
+  console.log("Numbers were chosen")
+};
 var userNeedspecial = window.confirm("Are special characters needed?");
+if(userNeedspecial){
+  //logic here
+  console.log("Special characters were chosen")
+};
 
 var userNeed = window.prompt("How long is needed password? Type number.");
 
@@ -41,9 +47,10 @@ var userNeed = window.prompt("How long is needed password? Type number.");
 
 
 //to produce password
-var index = [Math.floor(Math.random() * options.length)];
+var index = Math.floor(Math.random() * options.length);
 document.generatePassword = passwordElements[index];
 
-
+var passwordText = document.querySelector("#password");
+passwordText.value = "password";
 
 };
