@@ -17,32 +17,34 @@ function generatePassword() {
   /////////////////////////// WRITE YOUR CODE HERE /////////////////////////
   ///info for producing
 var passwordElements = {
-  lower: "abcdefghijklmnopqrstuvwxyz".split,
-  uper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split,
-  number: "0123456789".split,
-  special: "`~!@#$%^&()*-_=+".split,
+  lower: "abcdefghijklmnopqrstuvwxyz".split(''),
+  uper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(''),
+  number: "0123456789".split(''),
+  special: "`~!@#$%^&()*-_=+".split(''),
   };
-
+var options = []
 ///info prompt
+console.log(passwordElements.uper);
 var userNeedup = window.confirm("Are uppercase letters needed?");
 if (userNeedup){
-  //logic here
-  console.log("Upper cass letters were chosen")
+ options.push(...passwordElements.uper);
+  console.log("Upper cass letters were chosen", {userNeedup})
+  console.log(options)
 };
 var userNeednumber = window.confirm("Are numbers needed?");
 if (userNeednumber){
   //logic here
-  console.log("Numbers were chosen")
+  console.log("Numbers were chosen", {userNeednumber})
 };
 var userNeedspecial = window.confirm("Are special characters needed?");
 if(userNeedspecial){
   //logic here
-  console.log("Special characters were chosen")
+  console.log("Special characters were chosen", {userNeedspecial})
 };
 
-var userNeed = window.prompt("How long is needed password? Type number.");
-
-
+var userNeedcharaters = window.prompt("How long is needed password? Type number.");
+///8 to 128
+console.log("Need ", {userNeedcharaters: parseInt (userNeedcharaters)})
 
 
 
